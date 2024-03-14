@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.jacobsanderlin.notesandpasswords.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_notes"
+        android:name="com.jacobsanderlin.notesandpasswords.ui.notes.NotesFragment"
+        android:label="@string/menu_notes"
+        tools:layout="@layout/fragment_notes" />
+
+    <fragment
+        android:id="@+id/nav_passwords"
+        android:name="com.jacobsanderlin.notesandpasswords.ui.passwords.PasswordsFragment"
+        android:label="@string/menu_passwords"
+        tools:layout="@layout/fragment_passwords" />
+    <fragment
+        android:id="@+id/nav_generate"
+        android:name="com.jacobsanderlin.notesandpasswords.ui.generate.GenerateFragment"
+        android:label="@string/menu_generate"
+        tools:layout="@layout/fragment_generate"/>
+    <fragment
+        android:id="@+id/nav_save_password"
+        android:name="com.jacobsanderlin.notesandpasswords.ui.savepassword.SavePasswordFragment"
+        android:label="@string/menu_save_password"
+        tools:layout="@layout/fragment_save_password"/>
+</navigation>
